@@ -1,0 +1,53 @@
+<section class="dashboard-wrapper">
+    <div *ngIf="!dashBoardData; else dashboardContent" class="spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+
+    <ng-template #dashboardContent>
+        <h1>Dashboard</h1>
+        <p>Hello User, {{ greeting }}!</p>
+
+        <section class="dashboard">
+            <mat-card aria-label="Total Portfolio Value">
+                <mat-card-title>Total Portfolio Value</mat-card-title>
+                <mat-card-content>
+                    <h3>{{ dashBoardData.totalPortfolioValue | currency: 'USD' }}</h3>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card aria-label="Overall Return">
+                <mat-card-title>Overall Return</mat-card-title>
+                <mat-card-content>
+                    <h3>{{ getOverallReturn() }}</h3>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card aria-label="Asset Allocation">
+                <mat-card-title>Asset Allocation %</mat-card-title>
+                <mat-card-content>
+                    <canvas baseChart [data]="pieChartData" [type]="pieChartType">
+                    </canvas>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card aria-label="Market Trends">
+                <mat-card-title>Market Trends</mat-card-title>
+                <canvas baseChart [data]="marketTrendData" [type]="lineChartType">
+                </canvas>
+            </mat-card>
+
+            <mat-card aria-label="Performance Metrics">
+                <mat-card-title>Performance Metrics</mat-card-title>
+                <canvas baseChart [data]="perfLineChartData" [type]="lineChartType">
+                </canvas>
+            </mat-card>
+
+        </section>
+
+        <div class="add-new-investment-btn">
+            <button mat-flat-button color="primary" (click)="openDialog()">
+                Add New Investment
+            </button>
+        </div>
+    </ng-template>
+</section>

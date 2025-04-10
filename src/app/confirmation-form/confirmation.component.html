@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>Confirmation</h2>
+<mat-dialog-content>
+    <p><strong>Please check your inputs and confirm.</strong></p>
+    <p><strong>Asset Type:</strong> {{ data.assetType }}</p>
+    <p><strong>Quantity:</strong> {{ data.quantity }}</p>
+    <p><strong>Purchase Price:</strong> {{ data.purchasePrice }}</p>
+    <p><strong>Date:</strong> {{ data.date}}</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button mat-button (click)="onSubmit()" cdkFocusInitial>Submit</button>
+</mat-dialog-actions>

@@ -1,0 +1,25 @@
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+mat-card {
+  flex: 1 1 calc(50% - 16px);
+  min-width: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-new-investment-btn {
+  margin: 20px;
+  float: right;
+}

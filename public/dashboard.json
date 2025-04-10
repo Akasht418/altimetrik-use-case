@@ -1,0 +1,51 @@
+{
+  "assetAllocation": [
+    {
+      "assetType": "Stocks",
+      "purchasePrice": 5000,
+      "quantity": 104,
+      "date": "04/10/2024"
+    },
+    {
+      "assetType": "Bonds",
+      "purchasePrice": 5000,
+      "quantity": 104,
+      "date": "04/10/2024"
+    },
+    {
+      "assetType": "Cash",
+      "purchasePrice": 5000,
+      "quantity": 104,
+      "date": "04/10/2024"
+    },
+    {
+      "assetType": "Real Estate",
+      "purchasePrice": 150000,
+      "quantity": 14,
+      "date": "04/10/2023"
+    },
+    {
+      "assetType": "Stocks",
+      "purchasePrice": 1000,
+      "quantity": 10,
+      "date": "06/12/2024"
+    }
+  ],
+  "marketTrends": [
+    { "month": "Jan", "value": 70 },
+    { "month": "Feb", "value": 81 },
+    { "month": "Mar", "value": 74 },
+    { "month": "Apr", "value": 69 },
+    { "month": "May", "value": 86 },
+    { "month": "Jun", "value": 75 }
+  ],
+  "portfolioPerformance": [
+    { "month": "Jan", "value": 90 },
+    { "month": "Feb", "value": 76 },
+    { "month": "Mar", "value": 67 },
+    { "month": "Apr", "value": 81 },
+    { "month": "May", "value": 86 },
+    { "month": "Jun", "value": 56 }
+  ],
+  "overallReturn": "+12.15%"
+}
